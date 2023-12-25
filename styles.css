@@ -1,0 +1,136 @@
+/* Reset some default styles */
+body, h1, h2, ul, p, img {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Pacifico', sans-serif;
+  line-height: 1.6;
+  background-color: #ecf0f1; /* Light Gray */
+  color: #000; /* Dark Gray */
+  background-image: url('assets/barbgimg.jpg'); /* Set the path to your background image */
+  background-size: cover; /* Ensure the background image covers the entire viewport */
+  background-repeat: repeat; /* Prevent the background image from repeating */
+  max-height: 80vh; /* Set a maximum height, adjust as needed */
+  overflow-y: auto; /* Add scroll if content exceeds the height */
+}
+
+/* Style the form */
+form {
+  max-width: 800px; /* Increased width */
+  margin: 50px auto 80px; /* Increased margin at the bottom */
+  padding: 60px; /* Increased padding */
+  border: 8px solid #000000; /* Border color */
+  border-radius: 30px;
+  background-color: #7E200C; /* Light Grayish Blue */
+  box-shadow: 0 0 35px rgba(255, 0, 0, 0.5);
+}
+
+h1 {
+  font-size: 54px; /* Larger font size */
+  font-weight: bold;
+  color: #e74c3c; /* Red */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #000; /* Black font color */
+  font-size: 32px; /* Increased font size */
+  text-align: center; /* Center the text */
+  font-family: 'Pacifico', cursive;
+}
+
+input {
+  width: 100%;
+  padding: 12px; /* Larger padding */
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  border: 2px solid #7E200C; /* Border color */
+  border-radius: 4px;
+  box-shadow: 0 0 25px rgba(255, 0, 0, 0.5); /* Red glow effect */
+}
+
+button {
+  display: block; /* Ensures the button takes full width */
+  margin: 0 auto; /* Centers the button */
+  background-color: #000; /* Green */
+  color: white;
+  padding: 13px; /* Increased padding for a larger button */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 21px; /* Increased font size */
+  font-family: 'Pacifico', cursive; /* Use Pacifico font */
+  box-shadow: 0 0 14px rgba(255, 0, 0, 0.5);
+}
+
+button:hover {
+  background-color: #000; /* Darker Green */
+}
+
+/* Style the recipe display */
+#recipeContainer {
+  max-width: 800px; /* Increased width */
+  margin: 50px auto; /* Centered */
+  padding: 20px;
+  border: 8px solid #000; /* Border color */
+  border-radius: 8px;
+  background-color: #7E200C; /* White */
+  box-shadow: 0 0 17px rgba(255, 0, 0, 0.5);
+  font-size: 23px;
+  
+}
+
+.happy-hour-title {
+  font-size: 75px; /* Increased font size */
+  font-weight: bold; /* Bolder text */
+  color: #7E200C; /* Orange color */
+  text-align: center;
+  text-shadow: 5px 5px 5px rgba(255, 0, 0, 0.5); /* Glow effect */
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 45px; /* Larger font size */
+  color: #000; 
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  font-size: 25px;
+}
+
+li {
+  margin-bottom: 8px;
+  font-size: 25px;
+
+}
+
+strong {
+  font-weight: bold;
+  font-size: 35px;
+}
+
+img {
+  display: block; /* Ensure the image is treated as a block element */
+  margin: 16px auto; /* Center the image horizontally and add space at the top */
+  max-width: 100%;
+  height: auto;
+  border: 7px solid #000; /* Black border */
+  border-radius: 4px;
+  box-shadow: 0 0 14px rgba(255, 0, 0, 0.5); /* Glowing red shadow effect */
+}
+
+/* Responsive design */
+@media screen and (max-width: 600px) {
+  form, #recipeContainer {
+    max-width: 100%;
+  }
+}
